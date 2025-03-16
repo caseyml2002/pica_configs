@@ -6,7 +6,7 @@ class Komiic extends ComicSource {
     // 唯一标识符
     key = "Komiic"
 
-    version = "1.0.5"
+    version = "1.0.6"
 
     minAppVersion = "3.1.0"
 
