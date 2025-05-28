@@ -22,15 +22,15 @@ class CopyManga extends ComicSource {
             token = " " + token;
         }
         this.headers = {
-            "User-Agent": "COPY/" + CopyManga.copyVersion,
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
             "Accept": "*/*",
             "Accept-Encoding": "gzip",
-            "source": "copyApp",
+      //      "source": "copyApp",
             "webp": "1",
             "region": "1",
-            "version": CopyManga.copyVersion,
+         //   "version": CopyManga.copyVersion,
             "authorization": `Token${token}`,
-            "platform": "3",
+            "platform": "2",
         }
     }
 
@@ -54,15 +54,15 @@ class CopyManga extends ComicSource {
                 let token = data.results.token
                 this.saveData('token', token)
                 this.headers = {
-                    "User-Agent": "COPY/" + CopyManga.copyVersion,
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
                     "Accept": "*/*",
                     "Accept-Encoding": "gzip",
-                    "source": "copyApp",
+        //            "source": "copyApp",
                     "webp": "1",
                     "region": "1",
-                    "version": CopyManga.copyVersion,
+          //          "version": CopyManga.copyVersion,
                     "authorization": `Token ${token}`,
-                    "platform": "3",
+                    "platform": "2",
                 }
                 return "ok"
             } else {
